@@ -1,0 +1,15 @@
+<launch>
+  <!-- 启动发布方节点 -->
+  <node name="camera_node" pkg="your_package_name" type="camera_node_executable" output="screen">
+    <!-- 设置发布方节点的参数 -->
+    <param name="param1" value="value1" />
+    <param name="param2" value="value2" />
+  </node>
+
+  <!-- 启动订阅方节点 -->
+  <node name="fsm_node" pkg="your_package_name" type="fsm_node_executable" output="screen">
+    <!-- 设置订阅方节点的参数 -->
+    <param name="param3" value="value3" />
+    <param name="param4" value="value4" />
+  </node>
+</launch>
